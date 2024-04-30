@@ -55,7 +55,8 @@
     position: relative;
     border: 1px solid black;
     overflow: hidden;
-    background-color: gray;
+    background: black;
+    color: #fdfbf2;
   }
 }
 
@@ -76,6 +77,7 @@
   background: rgba(45, 45, 45, 1);
   border-radius: 50%;
   overflow: hidden;
+  transition: transform 0.5s; /* Add transition for smooth scaling */
 }
 .circle-container .circle::before {
   content: "";
@@ -91,6 +93,9 @@
 }
 .circle-container .circle:hover::before {
   opacity: 1;
+}
+.circle-container .circle:hover {
+  transform: scale(1.05); /* Scale up the circle on hover */
 }
 .circle-container .circle::after {
   content: "";
