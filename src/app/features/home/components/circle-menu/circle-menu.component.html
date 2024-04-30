@@ -1,4 +1,4 @@
-<div class="circular-menu-container">
+<!-- <div class="circular-menu-container">
   <div class="circle-continer">
     <div
       class="ciruclar-menu-circle"
@@ -8,6 +8,22 @@
     >
       <div class="circle"></div>
     </div>
+  </div>
+  <div class="circular-menu-options">
+    <div class="menu-option circular-menu-about-me">About me</div>
+    <div class="menu-option circular-menu-contanct">Contact</div>
+    <div class="menu-option circular-menu-projects">Projects</div>
+    <div class="menu-option circular-menu-stacks">stacks</div>
+  </div>
+</div> -->
+<div class="menu-container">
+  <div class="circle-container">
+    <div
+      class="circle"
+      (mousemove)="updateCoordinates($event)"
+      [style.--x]="x"
+      [style.--y]="y"
+    ></div>
   </div>
   <div class="circular-menu-options">
     <div class="menu-option circular-menu-about-me">About me</div>
